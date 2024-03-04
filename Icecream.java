@@ -9,7 +9,7 @@ public class Icecream extends Product {
             this.taste = taste;
         }
         public String getTaste() {
-            return taste;
+            return taste.toLowerCase();
         }
  
         public Icecream(String brand, String name, double price, String taste, double weight){

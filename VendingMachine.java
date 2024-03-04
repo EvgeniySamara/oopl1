@@ -30,4 +30,16 @@ public class VendingMachine {
         }
     }
 
+    public Icecream getIcecream(String name, String taste){
+        for (Product product : products){
+            if (product instanceof Icecream){
+                Icecream ice = (Icecream)product;
+                if (ice.getName().equals(name) && ice.getTaste().equals(taste.toLowerCase()))
+                    return ice;
+            }
+        }
+        return null;
+    }
+
+
 }
