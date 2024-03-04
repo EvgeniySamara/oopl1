@@ -8,7 +8,9 @@ public class Icecream extends Product {
         public void setTaste(String taste) {
             this.taste = taste;
         }
-    
+        public String getTaste() {
+            return taste;
+        }
  
         public Icecream(String brand, String name, double price, String taste, double weight){
             super(brand, name, price);

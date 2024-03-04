@@ -17,6 +17,17 @@ public class VendingMachine {
         }
         return null;
     }
+    public void MixIcecream(Icecream ice1, Icecream ice2)
+    {
+        String newtaste = ice1.getTaste()+"+"+ice2.getTaste();
+        ice1.setTaste(newtaste);
+        ice2.setTaste(newtaste);
+    }
 
+    public void ProductList(List<Product> products) {
+        for (Product product : products) {
+            System.out.println(product.displayInfo());
+        }
+    }
 
 }
